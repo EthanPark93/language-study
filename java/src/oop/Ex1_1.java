@@ -5,9 +5,9 @@ package oop;
 
 public class Ex1_1 { // public 클래스가 존재하면 소스파일 이름과 일치해야함.
     public static void main(String[] args) {
-        Tv tv = new Tv(); // Tv클래스를 설계도 삼아 제품(객체)을 생성.
-        Tv tv2 = new Tv();
-        Tv tvAr[] = {tv, tv2}; // 객체의 배열도 생성 가능. 이 때, 타입은 해당 클래스로 지정한다.
+        Ex1_1_Tv tv = new Ex1_1_Tv(); // Tv클래스를 설계도 삼아 제품(객체)을 생성.
+        Ex1_1_Tv tv2 = new Ex1_1_Tv();
+        Ex1_1_Tv tvAr[] = {tv, tv2}; // 객체의 배열도 생성 가능. 이 때, 타입은 해당 클래스로 지정한다.
 
         tv.channel = 7;
         tv.channelDown();
@@ -21,7 +21,7 @@ public class Ex1_1 { // public 클래스가 존재하면 소스파일 이름과 
     }
 }
 
-class Tv { // public이 아니면 소스파일 이름과 상관 없음.
+class Ex1_1_Tv { // public이 아니면 소스파일 이름과 상관 없음.
 
     // Tv의 속성. (멤버변수, 필드)
     String color;
